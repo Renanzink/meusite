@@ -361,3 +361,61 @@ footer a {
     color: #5bbe42; 
     font-size: 1.2em;
 }
+.container {
+    position: relative;
+    z-index: 1; 
+    padding: 0px 20px; /* Reduzindo espaçamento lateral */
+}
+
+/* Seções */
+section {
+    margin-bottom: 30px; /* Pequena redução */
+    padding: 20px; /* Reduzi de 40px para 20px */
+}
+
+/* Seções centrais como História, Sobre Mim e Formação */
+#historia,
+#sobre-mim,
+#formacao,
+#cursos-recomendados,
+.contato {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 20px; /* Reduzi de 40px para 20px */
+    margin-top: 40px; /* Ajuste fino para manter proporção */
+    border-radius: 8px;
+    max-width: 100%; /* Removendo limitação de largura */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+}
+
+/* Listas de formação e cursos */
+#formacao ul,
+#cursos-recomendados ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#formacao li,
+#cursos-recomendados li {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    padding-left: 10px; /* Reduzindo espaçamento da lista */
+    position: relative;
+}
+
+#formacao li::before,
+#cursos-recomendados li::before {
+    content: "•";
+    color: #5bbe42;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.contato {
+    padding: 20px; /* Reduzi de 40px para 20px */
+}
